@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhDrasliku</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- rozdělení odstavců pomocí grid -->
+    <link rel="stylesheet" href="others/grid.css"> 
+    <!-- obrázky pomocí lightboxu -->
+    <link rel="stylesheet" href="css/lightbox.min.css" class="css">
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <!-- responzivita vebu přes css (queris) -->
+    <link rel="stylesheet" href="css/queries.css">
+    <!-- funkce navigace po strance přes jquery z https://releases.jquery.com/ -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/script_jquery.js"></script>
+
+</head>
+<body class="jq--home">
+    <header>
+        <div class="nav-background"></div>
+        <div class="nav-bar row ">    
+            <div id="logo">
+                <img src="img/logo.png" alt="logo">
+
+            </div>
+            <nav>
+                <ul>
+                     <li><a href="#home" class="jq--scroll-home">Domů</a></li>
+                    <li><a href="#about" class="jq--scroll-about">O mně</a></li>
+                    <li><a href="#services" class="jq--scroll-skill">Dovednosti</a></li>
+                    <li><a href="#contact" class="jq--scroll-project">Projekty</a></li>
+                    <li><a href="#contact" class="jq--scroll-contakt">Kontakt</a></li>
+
+                </ul>
+                    <!-- mobilní navigační menu -->
+                    <div class="mobil-nav-background"></div>
+                    <a class="mobil-nav-icon jq--nav-icon"> 
+                        <img class="jq--image-hamburger" src="img/hamburgerMenu.png" alt="Menu">
+                    </a>  
+
+
+            </nav>
+
+        </div>
+
+        <div class="heder_text">
+            <h1>Jan Černý</h1>
+            <h2>Ja a svět IT</h2>
+            <p>„Vytrvalost  otevírá cestu k úspěchu.“</p>
+            <a class="btn btn-full jq--scroll-about" href="#">KDO JSEM?</a>
+            <a class="btn btn-empty jq--scroll-project" href="#">Projekty</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1 sekce  -->
+        <section class="obout-us row jq--about">
+            <div class="heading-main">
+                <h2>O mně</h2>
+            </div>
+
+            <div class="about-obr">
+
+                <div class="col span-1-of-2">
+                    <img src="img/kocka.jpg" alt="">
+                </div>
+
+
+                <div class="col span-1-of-2 ">
+                    <!-- <h3>Jsem programátor</h3> -->
+                    <div class="info-text ">
+                        <p>Jsem nadšený IT nadšenec s vášní pro programování, tvorbu webových aplikací a testing. Mým cílem je neustále se rozvíjet a zdokonalovat v oblasti vývoje softwaru a webových technologií. V rámci rekvalifikačního kurzu jsem si osvojil dovednosti v Pythonu, HTML, CSS, JavaScriptu, Django a Reactu.</p>
+                    </div>    
+                    <div class="info-text ">
+                        <p>V závěrečném projektu aplikace pro správu pojištěnců jsem dbal na dodržování principů SRP, SoC a DRY. Kromě vlastní práce jsem pomáhal i ostatním studentům s implementací těchto zásad.</p>
+                    </div> 
+                    <div class="info-text ">
+                        <p>Baví mě objevovat nové technologie a vytvářet moderní, efektivní řešení. Rád pracuji v týmu a vítám nové příležitosti v oblasti vývoje i testování softwaru.</p>
+                    </div> 
+                    <div class="info-text moto">
+                        <p>„Každý problém je jen výzva čekající na řešení.“</p>
+                    </div>
+
+                    </div>
+            
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- 3 sekce  -->
+
+        <section class="skills jq--skill ">
+            <div class="heading-main">
+                <h2>Dovednosti</h2>
+            </div>
+
+            <!-- první řádka dovedností -->
+            <div class="dov-info row">
+
+                    <div class="col span-1-of-3 one-skill">
+                        <p>Python je můj primární programovací jazyk, který používám pro tvorbu skriptů, webových aplikací a automatizaci procesů. Neustále se v něm zdokonaluji a hledám nové možnosti jeho využití.</p>
+                        <div class="logo-name">
+                            <img class="clearfix" src="img/dovednosti loga/python.png" alt="Python logo">
+                            <p>Python</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col span-1-of-3 one-skill">
+                        <p>Tyto technologie využívám k vytváření moderních a responzivních webových stránek. HTML a CSS mi umožňují strukturovat a stylovat obsah, zatímco JavaScript přidává interaktivní prvky.</p>
+                        <div class="logo-name">
+                            <img src="img/dovednosti loga/html.png" alt="html logo">
+                            <img src="img/dovednosti loga/css.png" alt="css logo">
+                            <img src="img/dovednosti loga/javascr.png" alt="JavaScript logo">
+
+                            <p>Html/CSS/JS</p>
+                        </div>
+                    </div>
+
+                    <div class="col span-1-of-3 one-skill">
+                        <p>JavaScript používám nejen pro frontendové aplikace, ale i jako součást frameworků jako React a Django. Neustále se v něm zdokonaluji, abych vytvářel dynamické a uživatelsky přívětivé weby.</p>
+                        <div class="logo-name">
+                            <img src="img/dovednosti loga/javascr.png" alt="JavaScript logo">
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- druhá řádka dovedností -->
+
+            <div class="dov-info row">
+
+                    <div class="col span-1-of-3 one-skill">
+                        <p>SQL využívám pro správu a manipulaci dat v projektech vyžadujících databázové řešení. Zaměřuji se především na práci se SQLite v rámci webových aplikací.</p>
+                        <div class="logo-name">
+                            <img class="clearfix" src="img/dovednosti loga/sql.png" alt="SQL logo">
+                            <p>SQL</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col span-1-of-3 one-skill">
+                        <p>Django a React používám jako backend a frontend pro webové aplikace. Tuto kombinaci se aktuálně učím a pracuji na prvních projektech, abych ji plně využil pro komplexní aplikace.</p>
+                        <div class="logo-name">
+                            <img src="img/dovednosti loga/django.png" alt="Django logo">
+                            <img src="img/dovednosti loga/react.png" alt="React logo">
+                            
+                            <p>Django a React</p>
+                        </div>
+                    </div>
+
+                    <div class="col span-1-of-3 one-skill">
+                        <p>Git používám pro verzování a sledování změn v kódu, zatímco GitHub mi slouží k hostování projektů a spolupráci. Tyto nástroje jsou pro mě nepostradatelné při práci na větších projektech.</p>
+                        <div class="logo-name">
+                            <img src="img/dovednosti loga/git.png" alt="git logo">
+                            <img src="img/dovednosti loga/github.png" alt="github logo">
+
+                            <p>Git a GitHub</p>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- 3. řádka dovedností -->
+
+            <div class="dov-info row">
+
+                    <div class="col span-1-of-3 one-skill">
+                        <p>VS Code je mé oblíbené vývojové prostředí pro většinu projektů díky flexibilitě a rozšířením. PyCharm využívám jako alternativu při práci na rozsáhlejších Python projektech.</p>
+                        <div class="logo-name">
+                            <img class="clearfix" src="img/dovednosti loga/vscode.png" alt="visual scutio code logo">
+                            <img class="clearfix" src="img/dovednosti loga/pycharm.png" alt="pycharm logo">
+                            <p>VS Code a PyCharm</p>
+                        </div>
+                    </div>
+                    
+                  
+                    <div class="col span-1-of-3 one-skill">
+                        <p>Postman využívám pro testování a správu API. Je to nástroj, který mi umožňuje rychle a efektivně ověřovat funkčnost backendových služeb. V současnosti se s ním učím pracovat a plánuji ho zapojit do svých budoucích projektů.</p>
+                        <div class="logo-name">
+                            <img src="img/dovednosti loga/postman-icon.png" alt="postman logo">
+                            <p>Postman</p>
+                        </div>
+                    </div>
+            </div>
+
+        </section>
+
+        <!-- 2 sekce  -->
+
+        <section class="projekty row jq--project" >
+            <div class="heading-main">
+                <h2>Projekty</h2>
+            </div>
+
+            <div class="projekt-example">
+
+                <div class="col span-1-of-2">
+                    <h3>Jednostránkový web – Osobní prezentace</h3>
+                    <p>Tento jednostránkový web slouží jako profesionální vizitka a prezentace mých dovedností v oblasti IT. Struktura je rozdělena do sekcí „O mně“, „Dovednosti“, „Projekty“ a „Kontakt“. Web je plně responzivní, využívá moderní design a nabízí intuitivní navigaci pomocí JavaScriptu a knihovny jQuery. Pro lepší prezentaci projektů je integrován Lightbox pro interaktivní zobrazení obrázků. Celý web je vytvořen pomocí HTML, CSS a JS s důrazem na přehlednost a aktuální webové standardy.</p>
+                    
+                    <img src="img/portfolio/one-page-web1.png" alt="">
+                    <img src="img/portfolio/one-page-web2.png" alt="">
+
+
+
+                </div>
+                <div class="col span-1-of-2">
+                    <h3>Pojištěnec – Konzolová aplikace</h3>
+                    
+                    <p>Tato konzolová aplikace pro správu pojištěnců je vytvořena v Pythonu jako součást rekvalifikačního kurzu na moderní web design. Aplikace umožňuje evidenci a správu pojištěnců s důrazem na správnou architekturu a přehlednost kódu. Během vývoje jsem dbal na dodržování principů SRP, SoC a DRY. Kromě vlastního vývoje jsem také pomáhal ostatním studentům při implementaci těchto zásad.</p>
+                    <img src="img/portfolio/pojistka1.png" alt="">
+                    <img src="img/portfolio/pojistka4.png" alt="">
+                </div>
+
+               
+
+            </div>
+
+
+        </section>
+
+
+        <!-- 4 sekce Kontakt -->
+
+        <section class="kontakt  jq--contakt">
+            <div class="heading-main">
+                <h2>Kontakt</h2>
+            </div>
+
+            <form action="" class="contakt-form row" >
+                <input type="text" placeholder="Jméno" required> <br>
+                <input type="text" placeholder="Příjmení" required> <br>
+                <input type="email" placeholder="E-mail" required> <br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Zpráva"></textarea> <br>
+                <input type="submit" value="Odeslat zprávu">
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="row">
+            
+            <div class="social">    
+            <p>
+                <a href="https://github.com/" target="_blank">GidHub</a>
+            </p>
+            <p>
+                <a href="www.linkedin.com" target="_blank">LinkedIn</a>
+            </p>
+            </div>
+
+            <p class="copywrite">Copywrite &copy; 2025 Moje Portfolio</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+@media only screen and (max-width: 768px) {
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+        
+    }
+
+    .nav-background {
+        display: none;
+    }
+
+    .mobil-nav-background{
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid #3ac81e ;
+        display: none;
+    }
+
+    .mobil-nav-icon {
+        display: inline;
+        position: fixed;
+        z-index: 15;
+        right: 2px;
+        top: 2px;
+
+    }
+    
+}
+
+@media only screen and (max-width: 870px){
+/* 2 sloupce na 1 v omě.  */
+    /* 3 sloupce na 2 v dovednosti / projekty*/
+/* 2 na 1 v projektech  */
+}
