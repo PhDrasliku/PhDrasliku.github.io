@@ -309,6 +309,23 @@ input[type="submit"]:hover {
     background-color: #000000;
     color: #26ff00;
 }
+/* Dialog po odeslání formuláře */
+.status-form {
+    display: none;
+    font-size: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border: #26ff00 2px solid;
+    border-radius: 30px 0px 30px 0;
+    min-width: 200px;
+       
+}
+
 /* -------------Patička---------- */
 footer {
     background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.9)), 
