@@ -51,7 +51,7 @@ $(document).ready(function () {
 
     // Funkce pro kontrolu velikosti okna
     function checkWindowSize() {
-        if (window.matchMedia('(max-width: 768px)').matches) {
+        if (window.matchMedia('(max-width: 440px)').matches) {
             // Mobilní verze
             if (isMobileMenuOpen) {
                 // Pokud je mobilní menu otevřené, zachovej jeho stav

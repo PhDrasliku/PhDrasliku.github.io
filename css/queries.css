@@ -1,12 +1,13 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 440px) {
 
     nav ul {
         display: none;
+        min-width: 20px;  
     }
 
     nav ul li {
         display: block;
-        
+        margin: 2px 0;
     }
 
     .nav-background {
@@ -15,7 +16,7 @@
 
     .mobil-nav-background{
         width: 100%;
-        height: 100px;
+        height: 120px;
         position: fixed;
         z-index: 10;
         background-color: rgba(0, 0, 0, 0.5);

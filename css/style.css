@@ -23,13 +23,9 @@ header {
 #logo img {
     width: 30%;
     height: auto;
-display: block;
+    display: block;
     margin: 0 auto 20px auto;
- 
-    /* background-color: chartreuse; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-}
+ }
 
 .nav-background{
     width: 100%;
@@ -82,9 +78,15 @@ nav ul li a.active {
     margin-top: 5px;
     margin-right: 5px;
     display: none;
+    width: 50px;
+    height: 37px;
+    z-index: 1000;
 }
 
-
+.mobil-nav-icon img {
+    width: 100%; /* Obrázek vyplní celý rodičovský prvek */
+    height: auto; /* Zachová poměr stran */
+}
 
 /* ----------------- */
 .heder_text h1 {
