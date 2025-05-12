@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- rozdělení odstavců pomocí grid -->
     <link rel="stylesheet" href="others/grid.css"> 
-    <!-- obrázky pomocí lightboxu -->
+    <!-- GALERIE obrázky pomocí lightboxu -->
     <link rel="stylesheet" href="css/lightbox.min.css" class="css">
     <script src="js/lightbox-plus-jquery.min.js"></script>
     <!-- responzivita vebu přes css (queris) -->
@@ -50,7 +50,7 @@
 
         <div class="heder_text">
             <h1>Jan Černý</h1>
-            <h2>Ja a svět IT</h2>
+            <h2>Já a svět IT</h2>
             <p>„Vytrvalost  otevírá cestu k úspěchu.“</p>
             <a class="btn btn-full jq--scroll-about" href="#">KDO JSEM?</a>
             <a class="btn btn-empty jq--scroll-project" href="#">Projekty</a>
@@ -197,30 +197,50 @@
                 <h2>Projekty</h2>
             </div>
 
-            <div class="projekt-example">
+            <div class="projekt-example col span-1-of-2">
 
-                <div class="col span-1-of-2">
                     <h3>Jednostránkový web – Osobní prezentace</h3>
                     <p>Tento jednostránkový web slouží jako profesionální vizitka a prezentace mých dovedností v oblasti IT. Struktura je rozdělena do sekcí „O mně“, „Dovednosti“, „Projekty“ a „Kontakt“. Web je plně responzivní, využívá moderní design a nabízí intuitivní navigaci pomocí JavaScriptu a knihovny jQuery. Pro lepší prezentaci projektů je integrován Lightbox pro interaktivní zobrazení obrázků. Celý web je vytvořen pomocí HTML, CSS a JS s důrazem na přehlednost a aktuální webové standardy.</p>
-                    
-                    <img src="img/portfolio/one-page-web1.png" alt="">
-                    <img src="img/portfolio/one-page-web2.png" alt="">
 
 
+                        <!-- HLAVNÍ OBR -->
+                     <div class="col span-1-of-2 projekt-main-obr">
+                    <a href="img/portfolio/one-page-web1.png" data-title="Jednostránkový Web - Uvítání" data-lightbox="mygallery"><img src="img/portfolio/one-page-web1.png" alt=""></a>
+                    </div>
 
-                </div>
-                <div class="col span-1-of-2">
+                    <div class="col span-1-of-2 projekt-side-obr">
+                    <a href="img/portfolio/one-page-web2.png" data-lightbox="mygallery"><img src="img/portfolio/one-page-web2.png" alt=""></a>
+                    <a href="img/portfolio/one-page-web2.png" data-lightbox="mygallery"><img src="img/portfolio/one-page-web2.png" alt=""></a>
+  
+                    <a href="img/portfolio/one-page-web2.png" data-lightbox="mygallery"><img src="img/portfolio/one-page-web2.png" alt=""></a>
+                    <a href="img/portfolio/one-page-web2.png" data-lightbox="mygallery"><img src="img/portfolio/one-page-web2.png" alt=""></a>
+                    </div>
+            </div>
+
+<div class="projekt-example col span-1-of-2">
+
+                    <h3>Konzolová aplikace v Pythonu</h3>
+                    <p>Tato konzolová aplikace pro správu pojištěnců je vytvořena v Pythonu jako součást rekvalifikačního kurzu na moderní web design. Aplikace umožňuje evidenci a správu pojištěnců s důrazem na správnou architekturu a přehlednost kódu. Během vývoje jsem dbal na dodržování principů SRP, SoC a DRY. Kromě vlastního vývoje jsem také pomáhal ostatním studentům při implementaci těchto zásad.</p>
+
+                        <!-- HLAVNÍ OBR -->
+                     <div class="col span-1-of-2 projekt-main-obr">
+                    <a href="img/portfolio/pojistka1.png" data-lightbox="mygallery"><img src="img/portfolio/pojistka1.png" alt=""></a>
+                    </div>
+
+                    <div class="col span-1-of-2 projekt-side-obr">
+                    <a href="img/portfolio/pojistka4.png" data-lightbox="mygallery"><img src="img/portfolio/pojistka4.png" alt=""></a>
+              
+                    </div>
+
+
+                <!-- <div class="col span-1-of-2">
                     <h3>Pojištěnec – Konzolová aplikace</h3>
                     
                     <p>Tato konzolová aplikace pro správu pojištěnců je vytvořena v Pythonu jako součást rekvalifikačního kurzu na moderní web design. Aplikace umožňuje evidenci a správu pojištěnců s důrazem na správnou architekturu a přehlednost kódu. Během vývoje jsem dbal na dodržování principů SRP, SoC a DRY. Kromě vlastního vývoje jsem také pomáhal ostatním studentům při implementaci těchto zásad.</p>
                     <img src="img/portfolio/pojistka1.png" alt="">
                     <img src="img/portfolio/pojistka4.png" alt="">
-                </div>
-
-               
-
+                </div> -->
             </div>
-
 
         </section>
 
@@ -233,7 +253,7 @@
             </div>
 
 
-        <!---- Formulář  ---->
+        <!--.... Formulář  ....-->
 
             <form action="https://formspree.io/f/xqaqlodr" class="contakt-form row" method="POST">
                 <input type="text" name="name" placeholder="Jméno" required> <br>
