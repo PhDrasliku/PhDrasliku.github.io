@@ -21,7 +21,7 @@ header {
 /* -------------Header----Navigace----------- */
 
 #logo img {
-    width: 30%;
+    width: 50%;
     height: auto;
     display: block;
     margin: 0 auto 20px auto;
@@ -231,6 +231,8 @@ nav ul li a.active {
 }
 
 
+
+
 /* ---main--section--------,3,5-sekce--fotogalerie-------- */
 /* .foto-segment li {
     list-style-type: none;
@@ -411,3 +413,45 @@ footer {
 
 
 
+/* --------Tlačitko projekt gythub------- */
+/* Kontejner tlačítka */
+.btn-github-container {
+    display: flex; /* Použití flexboxu pro zarovnání obsahu */
+    justify-content: center; /* Horizontální zarovnání na střed */
+    align-items: flex-end; /* Vertikální zarovnání na spodní část */
+    width: 100%; /* Kontejner zabírá celou šířku sloupce */
+
+}
+
+/* Styl tlačítka */
+.btn-github {
+    display: flex; /* Flexbox pro zarovnání textu a obrázku */
+    justify-content: center; /* Horizontální zarovnání obsahu */
+    align-items: center; /* Vertikální zarovnání obsahu */
+    text-decoration: none; /* Odstranění podtržení textu */
+    color: #26ff00; /* Barva textu */
+    font-size: 18px; /* Velikost textu */
+    font-weight: bold; /* Tučný text */
+    background-color: #000000; /* Barva pozadí */
+    border: #26ff00 2px solid; /* Zelený rámeček */
+    border-radius: 50px; /* Zaoblení rohů */
+    width: 80%; /* Tlačítko zabírá 80 % šířky rodiče */
+    transition: all 0.3s ease; /* Přechod pro hover efekt */
+    cursor: pointer; /* Změna kurzoru na ukazatel */
+}
+
+/* Hover efekt */
+.btn-github:hover {
+    background-color: #26ff00; /* Změna barvy pozadí při najetí myší */
+    color: #000000; /* Změna barvy textu při najetí myší */
+}
+
+/* Obrázek uvnitř tlačítka */
+.btn-github img {
+    width: 30px; /* Šířka obrázku */
+    margin-left: 10px; /* Mezera mezi textem a obrázkem */
+    border-radius: 50%; /* Zaoblení rohů obrázku */
+    background-color: black;
+    margin: 0% 15px 0% 15px;  /* přepis margin u "projekt-example img" */
+}
+/* -------------------------- */
