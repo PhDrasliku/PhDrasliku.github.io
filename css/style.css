@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+        font-family: Source code pro;
+
 }
 /* -------------ŠÍŘKA STRÁNKY---------- */
 .row {
@@ -85,16 +87,16 @@ nav ul li a.active {
     color: #fff;
     font-size: 35px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    word-spacing: 3.5px;
+    /* letter-spacing: 1.5px; */
+    /* word-spacing: 3.5px; */
     text-align: center;
 }
 .heder_text h2 {
     color: #fff;
     font-size: 25px;
     /* text-transform: uppercase; */
-    letter-spacing: 1.5px;
-    word-spacing: 3.5px;
+    /* letter-spacing: 1.5px; */
+    /* word-spacing: 1.5px; */
     text-align: center;
 }
 .heder_text p {
