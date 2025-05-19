@@ -52,3 +52,29 @@
 .projekt-side-obr img{
     width:  45.5%;
 } */
+
+/* 2 sloupce při šířce pod 900px */
+@media only screen and (max-width: 950px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 1 sloupec při šířce pod 540px */
+@media only screen and (max-width: 725px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsivita: pod 850px na jeden sloupec */
+@media only screen and (max-width: 850px) {
+    .about-obr {
+        flex-direction: column;
+        gap: 0;
+    }
+    .about-col {
+        width: 100%;
+        min-width: unset;
+    }
+}

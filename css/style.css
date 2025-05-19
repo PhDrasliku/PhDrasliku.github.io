@@ -9,6 +9,8 @@
 .row {
     max-width: 1140px;
     margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* -------------Header--------------- */
@@ -103,9 +105,9 @@ nav ul li a.active {
     text-align: center;
 }
 .heder_text p {
-    min-width: 300px;
+    min-width: 100%;
     color: #fff;
-    font-size: 15px;
+    font-size: 18px;
     font-style: italic;
     letter-spacing: 1.5px;
     word-spacing: 3.5px;
@@ -131,6 +133,22 @@ nav ul li a.active {
     border-bottom: #26ff00 2px solid;
 }
 /* ---main--section----1-sekce--o-mě---------- */
+
+.about-obr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.about-col {
+    flex: 1 1 48%;
+    box-sizing: border-box;
+    min-width: 300px; /* pro lepší responsivitu */
+    margin-bottom: 20px;
+}
+
 .about-obr img {
     display: block;
     width: 70%;
@@ -160,35 +178,70 @@ nav ul li a.active {
         url("../img/metrix-view.png");
     height: 100%;
     background-attachment: fixed;
+    padding-bottom: 20px;   /* kompenzace gap v .skills-grid */
 }
 .skills h2 {
     color: #fff;
     padding-top: 20px;
 }
+/* Grid pro dovednosti */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+    align-items: center; /* vertikální zarovnání obsahu v buňce */
+    justify-items: center; /* horizontální zarovnání obsahu v buňce */
+}
 .one-skill {
     color: #ffffff;
     font-size: 18px;
     background: linear-gradient(rgba(0,0,0,0.8));
-    padding: 1%;
-    /* height: 350px; */
+    padding: 1%; 
+    background: #111;
+    color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* zarovnání obsahu na střed vertikálně */
+    align-items: center;     /* zarovnání obsahu na střed horizontálně */
+    width: 100%;
 }
+
 .one-skill p {
     font-size: 20px;
+    text-align: start;
+    margin-bottom: 10px;
+    width: 100%;
 }
 .logo-name {
-    margin-top: 15px;
-    margin-bottom: 30px;  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end; /* zarovnání doprava */
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 .logo-name p {
-    padding: 14px;
-    margin-left: 0;
+    padding: 0;
+    margin: 0;
     font-style: normal;
+    text-align: right;
 }
 .logo-name img{
     width: 50px; 
     border-radius: 50%;   
     float: right;
+    display: block;
+    margin-left: 10px;
 }
+
 /* ---main--section--------2-sekce--projekty-------- */
 
 /* Kontejner pro všechny projekty */
@@ -390,10 +443,10 @@ footer {
 }
 .social {
     text-align: center;
-    margin: 10px 0;
+    padding: 10px 0 0 0;
 }
 .social p {
-    font-size: 18px;
+    font-size: 20px;
     display: inline;
     margin: 0 10px;
 }
@@ -401,7 +454,7 @@ footer {
 .social p a:visited {
     text-decoration: none;
     color: #26ff00;
-    font-size: 25px;
+    font-size: 30px;
     transition: all 0.5s ease-in-out;
 }
 .social p a:hover,
@@ -412,10 +465,9 @@ footer {
 .copywrite {
     text-align: center;
     color: #26ff00;
-    font-size: 18px;
-    margin: 10px 0;
+    font-size: 22px;
+    padding: 10px 0;
 }
-
 /* -------------Další funkce a text---------- */
 .btn {
     display: inline-block;
