@@ -46,7 +46,7 @@ nav ul {
     left : 50%;
     transform: translate(-50%, 0);
     margin-top: 5px;
-    min-width: 440px;    
+    min-width: 540px;    
     z-index: 20;
 }
 nav ul li a {
@@ -83,6 +83,9 @@ nav ul li a.active {
 }
 
 /* ----------------- */
+.heder_text {
+    min-width: 403px;
+}
 .heder_text h1 {
     color: #fff;
     font-size: 35px;
@@ -132,6 +135,7 @@ nav ul li a.active {
     display: block;
     width: 70%;
     margin: 5% auto;
+    max-width: 300px;
 
     border: #000000 0.5px solid;
     border-radius: 40%;
@@ -140,14 +144,14 @@ nav ul li a.active {
 .info-text{
     margin: 20px;
     font-size: 18px;
-    text-align: justify;
+    /* text-align: justify; */
     text-indent: 2em;
 }
 .moto {
     font-style: italic;
     text-align: center;
-    text-indent: 0;
-} 
+}
+
 
 /* ---main--section--------3-sekce--dovednosti-------- */
 .skills {
@@ -165,7 +169,8 @@ nav ul li a.active {
     color: #ffffff;
     font-size: 18px;
     background: linear-gradient(rgba(0,0,0,0.8));
-    padding: 10px;
+    padding: 1%;
+    /* height: 350px; */
 }
 .one-skill p {
     font-size: 20px;
@@ -186,6 +191,31 @@ nav ul li a.active {
 }
 /* ---main--section--------2-sekce--projekty-------- */
 
+/* Kontejner pro všechny projekty */
+.projekty {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%; /* mezera mezi projekty, můžeš upravit */
+    justify-content: flex-start;
+}
+
+/* Každý projektový box */
+.projekt-example {
+    width: 48%; /* dva vedle sebe */
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+/* Při menších rozlišeních na 100% */
+@media only screen and (max-width: 850px) {
+    .projekt-example {
+        width: 100%;
+    }
+    .projekty {
+        gap: 0;
+    }
+}
+
 .projekt-example h3 {
    text-align: center;
     font-size: 25px;
@@ -199,17 +229,58 @@ nav ul li a.active {
     padding: 0,2000px;
     margin: 15px;
 }
-.projekt-example img {
-    width: 96%;
-    height: 100%;
+
+.galerie {
+    display: flex;
+    width: calc(100% - 20px);           /* vždy šířka rodiče - px  */
+    max-width: 100%;       
+    box-sizing: border-box;
+    gap: 4%;                /*  mezery mezi hlavním a vedlejšími obrázky */
+    margin: 3% auto;
+    /* overflow: hidden; */
+
+}
+
+.galerie img {
+
     border: #000000 2px solid;
     border-radius: 15%;
-    box-shadow: 0px 5px 30px #000000;
-    margin: 2% ; 
+    box-shadow: 5px 5px 30px #000000;
 }
+.projekt-main-obr {
+
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 2%; */
+}
+.projekt-main-obr img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 15%;
+}
+.projekt-side-obr {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4%; /* mezera mezi obrázky, můžeš upravit */
+    align-items: center;
+    justify-items: center;
+}
+
 .projekt-side-obr img{
-    width:  44%;
-    margin-top: 5%;
+    width: 95%;
+        aspect-ratio: 1 / 0.8;     
+
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 15%;
 }
 
 /* ---main--section--------,3,5-sekce--fotogalerie-------- */
@@ -348,7 +419,7 @@ footer {
 /* -------------Další funkce a text---------- */
 .btn {
     display: inline-block;
-    margin-top: 7px;
+    margin: 7px 6%;
     color: #ffffff;
     padding: 3px 20px;
     border: #26ff00 2px solid;
@@ -366,7 +437,8 @@ footer {
     background: rgba(0, 255, 0, 0.5);
 }
 .btn-empty {
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    
 }
 
 /* konec floting- */
